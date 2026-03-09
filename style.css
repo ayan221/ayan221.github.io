@@ -228,19 +228,38 @@ h2 {
 }
 
 .tl-sub {
-  margin-top: 10px;
+  margin-top: 12px;
+  margin-left: 4px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 0;
   border-left: 2px solid var(--border);
-  padding-left: 14px;
+  padding-left: 0;
 }
 
 .tl-sub-item {
   display: flex;
-  gap: 12px;
+  gap: 16px;
+  padding: 0 0 14px 22px;
+  position: relative;
   font-size: 0.82rem;
   color: var(--text-muted);
+}
+
+.tl-sub-item:last-child {
+  padding-bottom: 4px;
+}
+
+.tl-sub-item::before {
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: 5px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 2px solid var(--text-muted);
 }
 
 .tl-sub-date {
