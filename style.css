@@ -227,6 +227,32 @@ h2 {
   color: var(--text-muted);
 }
 
+.tl-sub {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-left: 2px solid var(--border);
+  padding-left: 14px;
+}
+
+.tl-sub-item {
+  display: flex;
+  gap: 12px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.tl-sub-date {
+  flex-shrink: 0;
+  min-width: 120px;
+  font-weight: 500;
+}
+
+.tl-sub-title {
+  flex: 1;
+}
+
 /* ── Publications ───────────────────────────────── */
 .pub-list {
   display: flex;
