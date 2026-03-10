@@ -274,18 +274,18 @@ h2 {
 
 /* ── Publications ───────────────────────────────── */
 .pub-category {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--text-muted);
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   padding-bottom: 6px;
   border-bottom: 1px solid var(--border);
 }
 
 .pub-list + .pub-category {
-  margin-top: 36px;
+  margin-top: 28px;
 }
 
 .pub-list {
