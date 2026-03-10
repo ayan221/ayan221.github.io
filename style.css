@@ -112,7 +112,7 @@ h1 {
   margin-bottom: 24px;
 }
 
-.bio strong { color: var(--accent); font-weight: 500; }
+.bio strong { color: var(--text); font-weight: 600; }
 
 .links {
   display: flex;
