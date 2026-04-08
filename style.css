@@ -405,6 +405,30 @@ footer p {
   color: var(--text-muted);
 }
 
+/* ── i18n ──────────────────────────────────────── */
+body.lang-en .i18n-ja { display: none; }
+body.lang-ja .i18n-en { display: none; }
+
+.lang-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-family: var(--font);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+  margin-left: 12px;
+  flex-shrink: 0;
+}
+
+.lang-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 /* ── Hamburger ──────────────────────────────────── */
 .nav-toggle {
   display: none;

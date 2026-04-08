@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
-<body>
+<body class="lang-en">
 
   <nav>
     <div class="nav-inner">
@@ -18,11 +18,12 @@
         <span></span><span></span><span></span>
       </button>
       <ul id="nav-menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about"><span class="i18n-en">About</span><span class="i18n-ja">プロフィール</span></a></li>
+        <li><a href="#experience"><span class="i18n-en">Experience</span><span class="i18n-ja">経歴</span></a></li>
+        <li><a href="#publications"><span class="i18n-en">Publications</span><span class="i18n-ja">業績</span></a></li>
+        <li><a href="#contact"><span class="i18n-en">Contact</span><span class="i18n-ja">連絡先</span></a></li>
       </ul>
+      <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">JA</button>
     </div>
   </nav>
 
@@ -30,22 +31,37 @@
   <section id="about" class="hero">
     <div class="container hero-inner">
       <div class="hero-text">
-        <h1>Kotaro Amaya</h1>
+        <h1><span class="i18n-en">Kotaro Amaya</span><span class="i18n-ja">天谷 幸太郎</span></h1>
         <p class="affiliation">
-          PhD Student (D1) &nbsp;·&nbsp; Center for Information and Computer Science<br>
-          School of Science for Open and Environmental Systems,<br>
-          Graduate School of Science and Technology, Keio University<br>
-          <a href="https://isogawa.ics.keio.ac.jp/" target="_blank">Isogawa Lab</a>
+          <span class="i18n-en">
+            PhD Student (D1) &nbsp;·&nbsp; Center for Information and Computer Science<br>
+            School of Science for Open and Environmental Systems,<br>
+            Graduate School of Science and Technology, Keio University<br>
+            <a href="https://isogawa.ics.keio.ac.jp/" target="_blank">Isogawa Lab</a>
+          </span>
+          <span class="i18n-ja">
+            慶應義塾大学 大学院理工学研究科 開放環境科学専攻<br>
+            情報工学科 博士課程1年<br>
+            <a href="https://isogawa.ics.keio.ac.jp/" target="_blank">五十川研究室</a>
+          </span>
         </p>
         <p class="bio">
-          I work on computer vision and machine learning, with a focus on
-          <strong>human motion generation</strong>,
-          <strong>millimeter-wave human pose estimation</strong>, and
-          <strong>humanoid robotics</strong>.
-          My research aims to enable privacy-preserving human sensing and
-          high-quality human motion data generation without relying on costly capture equipment.
-          I am also a visiting researcher at Carnegie Mellon University (Oct. 2025–Oct. 2026),
-          working on motion generation for humanoid robots.
+          <span class="i18n-en">
+            I work on computer vision and machine learning, with a focus on
+            <strong>human motion generation</strong>,
+            <strong>millimeter-wave human pose estimation</strong>, and
+            <strong>humanoid robotics</strong>.
+            My research aims to enable privacy-preserving human sensing and
+            high-quality human motion data generation without relying on costly capture equipment.
+            I am also a visiting researcher at Carnegie Mellon University (Oct. 2025–Oct. 2026),
+            working on motion generation for humanoid robots.
+          </span>
+          <span class="i18n-ja">
+            コンピュータビジョンと機械学習の研究に取り組んでいます。
+            特に<strong>人物動作生成</strong>、<strong>ミリ波人体姿勢推定</strong>、<strong>ヒューマノイドロボティクス</strong>に注力しています。
+            プライバシーを保護した人体センシングと、高コストなモーションキャプチャ機器に依存しない高品質な動作データの生成を目指しています。
+            2025年10月〜2026年10月の期間、カーネギーメロン大学に訪問研究員として滞在し、ヒューマノイドロボットの動作生成に取り組んでいます。
+          </span>
         </p>
         <div class="links">
           <a href="https://scholar.google.co.jp/citations?user=3gah1bwAAAAJ&hl=ja&oi=sra" target="_blank">Google Scholar</a>
@@ -62,18 +78,24 @@
   <!-- Experience -->
   <section id="experience">
     <div class="container">
-      <h2>Experience</h2>
+      <h2><span class="i18n-en">Experience</span><span class="i18n-ja">経歴</span></h2>
       <div class="timeline">
 
         <div class="tl-item">
           <div class="tl-date">Apr. 2025 –</div>
           <div class="tl-content">
-            <p class="tl-title">Ph.D. Student</p>
-            <p class="tl-place">Center for Information and Computer Science, School of Science for Open and Environmental Systems, Graduate School of Science and Technology, Keio University &nbsp;·&nbsp; Isogawa Lab</p>
+            <p class="tl-title"><span class="i18n-en">Ph.D. Student</span><span class="i18n-ja">博士課程</span></p>
+            <p class="tl-place">
+              <span class="i18n-en">Center for Information and Computer Science, School of Science for Open and Environmental Systems, Graduate School of Science and Technology, Keio University &nbsp;·&nbsp; Isogawa Lab</span>
+              <span class="i18n-ja">慶應義塾大学 大学院理工学研究科 開放環境科学専攻 情報工学科 &nbsp;·&nbsp; 五十川研究室</span>
+            </p>
             <div class="tl-sub">
               <div class="tl-sub-item">
                 <span class="tl-sub-date">Oct. 2025 – Oct. 2026</span>
-                <span class="tl-sub-title">Visiting Researcher &nbsp;·&nbsp; <a href="https://www.cs.cmu.edu/~katef/" target="_blank">Katerina Fragkiadaki Lab</a>, Machine Learning Department, School of Computer Science, Carnegie Mellon University</span>
+                <span class="tl-sub-title">
+                  <span class="i18n-en">Visiting Researcher &nbsp;·&nbsp; <a href="https://www.cs.cmu.edu/~katef/" target="_blank">Katerina Fragkiadaki Lab</a>, Machine Learning Department, School of Computer Science, Carnegie Mellon University</span>
+                  <span class="i18n-ja">訪問研究員 &nbsp;·&nbsp; カーネギーメロン大学 コンピュータサイエンス学部 機械学習学科 <a href="https://www.cs.cmu.edu/~katef/" target="_blank">Katerina Fragkiadaki 研究室</a></span>
+                </span>
               </div>
             </div>
           </div>
@@ -82,16 +104,25 @@
         <div class="tl-item">
           <div class="tl-date">Apr. 2023 – Mar. 2025</div>
           <div class="tl-content">
-            <p class="tl-title">Master of Engineering</p>
-            <p class="tl-place">Center for Information and Computer Science, School of Science for Open and Environmental Systems, Graduate School of Science and Technology, Keio University</p>
+            <p class="tl-title"><span class="i18n-en">Master of Engineering</span><span class="i18n-ja">修士課程（工学）</span></p>
+            <p class="tl-place">
+              <span class="i18n-en">Center for Information and Computer Science, School of Science for Open and Environmental Systems, Graduate School of Science and Technology, Keio University</span>
+              <span class="i18n-ja">慶應義塾大学 大学院理工学研究科 開放環境科学専攻 情報工学科</span>
+            </p>
             <div class="tl-sub">
               <div class="tl-sub-item">
                 <span class="tl-sub-date">Aug. – Sep. 2023</span>
-                <span class="tl-sub-title">R&amp;D Intern &nbsp;·&nbsp; Sony</span>
+                <span class="tl-sub-title">
+                  <span class="i18n-en">R&amp;D Intern &nbsp;·&nbsp; Sony</span>
+                  <span class="i18n-ja">R&amp;Dインターン &nbsp;·&nbsp; ソニー</span>
+                </span>
               </div>
               <div class="tl-sub-item">
                 <span class="tl-sub-date">Jul. – Aug. 2023</span>
-                <span class="tl-sub-title">ML Engineer Intern &nbsp;·&nbsp; CyberAgent</span>
+                <span class="tl-sub-title">
+                  <span class="i18n-en">ML Engineer Intern &nbsp;·&nbsp; CyberAgent</span>
+                  <span class="i18n-ja">MLエンジニアインターン &nbsp;·&nbsp; サイバーエージェント</span>
+                </span>
               </div>
             </div>
           </div>
@@ -100,12 +131,18 @@
         <div class="tl-item">
           <div class="tl-date">Apr. 2019 – Mar. 2023</div>
           <div class="tl-content">
-            <p class="tl-title">Bachelor of Engineering</p>
-            <p class="tl-place">Dept. of Information and Computer Science, Faculty of Science and Technology, Keio University</p>
+            <p class="tl-title"><span class="i18n-en">Bachelor of Engineering</span><span class="i18n-ja">学士課程（工学）</span></p>
+            <p class="tl-place">
+              <span class="i18n-en">Dept. of Information and Computer Science, Faculty of Science and Technology, Keio University</span>
+              <span class="i18n-ja">慶應義塾大学 理工学部 情報工学科</span>
+            </p>
             <div class="tl-sub">
               <div class="tl-sub-item">
                 <span class="tl-sub-date">Mar. 2023</span>
-                <span class="tl-sub-title">Research Intern &nbsp;·&nbsp; OMRON SINIC X</span>
+                <span class="tl-sub-title">
+                  <span class="i18n-en">Research Intern &nbsp;·&nbsp; OMRON SINIC X</span>
+                  <span class="i18n-ja">リサーチインターン &nbsp;·&nbsp; OMRON SINIC X</span>
+                </span>
               </div>
             </div>
           </div>
@@ -118,7 +155,7 @@
   <!-- Publications -->
   <section id="publications">
     <div class="container">
-      <h2>Publications</h2>
+      <h2><span class="i18n-en">Publications</span><span class="i18n-ja">業績</span></h2>
 
       <h3 class="pub-category">International</h3>
       <div class="pub-list">
@@ -218,9 +255,10 @@
   <!-- Contact -->
   <section id="contact">
     <div class="container">
-      <h2>Contact</h2>
+      <h2><span class="i18n-en">Contact</span><span class="i18n-ja">連絡先</span></h2>
       <p>
-        Feel free to reach out for collaboration or questions.<br>
+        <span class="i18n-en">Feel free to reach out for collaboration or questions.</span>
+        <span class="i18n-ja">共同研究やご質問など、お気軽にご連絡ください。</span><br>
         <a href="mailto:a.kotarofeb2001@gmail.com">a.kotarofeb2001@gmail.com</a>
       </p>
     </div>
@@ -244,6 +282,21 @@
         toggle.classList.remove('open');
         menu.classList.remove('open');
       });
+    });
+
+    const langBtn = document.getElementById('lang-toggle');
+    const saved = localStorage.getItem('lang');
+    if (saved === 'ja') {
+      document.body.className = 'lang-ja';
+      document.documentElement.lang = 'ja';
+      langBtn.textContent = 'EN';
+    }
+    langBtn.addEventListener('click', () => {
+      const isEn = document.body.classList.contains('lang-en');
+      document.body.className = isEn ? 'lang-ja' : 'lang-en';
+      document.documentElement.lang = isEn ? 'ja' : 'en';
+      langBtn.textContent = isEn ? 'EN' : 'JA';
+      localStorage.setItem('lang', isEn ? 'ja' : 'en');
     });
   </script>
 </body>
