@@ -364,6 +364,9 @@ h2 {
   flex-wrap: wrap;
 }
 
+/* second venue line of the same paper (e.g. conference + workshop) */
+.pub-venue + .pub-venue { margin-top: -6px; }
+
 .venue-badge {
   display: inline-block;
   padding: 2px 8px;
